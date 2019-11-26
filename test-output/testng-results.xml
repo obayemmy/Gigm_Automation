@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-25T19:01:36 WAT" name="Default suite" finished-at="2019-11-25T19:01:42 WAT" duration-ms="5911">
+  <suite started-at="2019-11-26T08:01:21 WAT" name="Default suite" finished-at="2019-11-26T08:01:27 WAT" duration-ms="5931">
     <groups>
     </groups>
-    <test started-at="2019-11-25T19:01:36 WAT" name="Default test" finished-at="2019-11-25T19:01:42 WAT" duration-ms="5911">
+    <test started-at="2019-11-26T08:01:21 WAT" name="Default test" finished-at="2019-11-26T08:01:27 WAT" duration-ms="5931">
       <class name="com.gigm.TestCases.ValidateLogin">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.TestCases.ValidateLogin@5db250b4]" started-at="2019-11-25T19:01:22 WAT" name="setUp" finished-at="2019-11-25T19:01:36 WAT" duration-ms="13802" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.TestCases.ValidateLogin@5db250b4]" started-at="2019-11-26T08:01:07 WAT" name="setUp" finished-at="2019-11-26T08:01:21 WAT" duration-ms="14297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Login()[pri:0, instance:com.gigm.TestCases.ValidateLogin@5db250b4]" started-at="2019-11-25T19:01:36 WAT" name="Login" finished-at="2019-11-25T19:01:42 WAT" duration-ms="5880" status="PASS">
+        <test-method signature="Login()[pri:0, instance:com.gigm.TestCases.ValidateLogin@5db250b4]" started-at="2019-11-26T08:01:22 WAT" name="Login" finished-at="2019-11-26T08:01:27 WAT" duration-ms="5907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.TestCases.ValidateLogin@5db250b4]" started-at="2019-11-25T19:01:42 WAT" name="tearDown" finished-at="2019-11-25T19:01:44 WAT" duration-ms="1499" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.TestCases.ValidateLogin@5db250b4]" started-at="2019-11-26T08:01:27 WAT" name="tearDown" finished-at="2019-11-26T08:01:29 WAT" duration-ms="1569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

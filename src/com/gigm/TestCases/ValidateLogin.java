@@ -20,5 +20,4 @@ public class ValidateLogin extends TestBase{
 		login.enterPassword("password_TEXT");
 		login.clickSignIn();
 	}
-
 }
