@@ -39,7 +39,6 @@ public class TestBase {
 		driver.get(Utility.fetchProperty("applicationUrl").toString());
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
-
 	}
 
 
