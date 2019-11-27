@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.gigm.TestCases.ValidateLogin">
+      <class name="com.gigm.headerTestCases.CheckHeaderLinks">
         <methods>
-          <include name="Login"/>
+          <include name="checkFooterLinks"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.gigm.TestCases.ValidateLogin -->
+      </class> <!-- com.gigm.headerTestCases.CheckHeaderLinks -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

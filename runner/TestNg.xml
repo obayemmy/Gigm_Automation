@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="1" verbose="6" name="Gigm suite" annotations="JDK" parallel="tests">
+         
+  <test name="headerLinks">
+	 <classes>
+	   <class name="com.gigm.headerTestCases.CheckHeaderLinks"/>
+	 </classes>
+   </test>
+   
+  <test name="Login">
+     <classes>
+       <class name="com.gigm.testcases.ValidateLogin"/>
+     </classes>
+   </test>
+</suite>

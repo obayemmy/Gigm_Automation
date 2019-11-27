@@ -1,4 +1,4 @@
-package com.gigm.TestCases;
+package com.gigm.testcases;
 
 import java.io.IOException;
 
@@ -9,15 +9,29 @@ import com.gigm.pages.HomePage;
 import com.gigm.pages.LoginPage;
 
 public class ValidateLogin extends TestBase{
-	
-	@Test
-	public void Login() throws IOException {
-		LoginPage login = new LoginPage(driver);
-		HomePage home = new HomePage(driver);
+	LoginPage login;
+	HomePage home;
+	@Test(priority=0)
+	public void invalidLogin() throws IOException, InterruptedException {
+login = new LoginPage(driver);
+home = new HomePage(driver);
 		home.ghanaAds();
 		login.loginBtn();
-		login.enterEmail("email_XPATH");
-		login.enterPassword("password_TEXT");
+		login.enterInvalidEmail("");
+		login.enterPassword("");
 		login.clickSignIn();
 	}
+
+	@Test(priority=1)
+	public void validLogin() throws InterruptedException, IOException {		
+		Thread.sleep(2000);
+		home.ghanaAds();
+		login.loginBtn();
+		login.enterValidEmail("");
+		login.enterPassword("");
+		login.clickSignIn();
+		Thread.sleep(4000);
+
+	}
 }
+
