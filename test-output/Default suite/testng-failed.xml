@@ -5,7 +5,7 @@
     <classes>
       <class name="com.gigm.headerTestCases.CheckHeaderLinks">
         <methods>
-          <include name="checkFooterLinks"/>
+          <include name="checkHeaderLinks"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

@@ -4,10 +4,12 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import com.gigm.utility.Utility;
 
 public class LoginPage {
+	
 	WebDriver driver;
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -19,6 +21,12 @@ public class LoginPage {
 
 	public void enterValidEmail( String email) throws IOException {
 		driver.findElement(By.id(Utility.fetchLocator("email_ID"))).sendKeys(Utility.fetchLocator("email_TEXT"));
+	}
+	
+	public void ValidateEmailField() {
+		Assert.assertEquals("email_ID", "email_ID");
+		
+		
 	}
 	
 	public void enterInvalidEmail( String email) throws IOException {

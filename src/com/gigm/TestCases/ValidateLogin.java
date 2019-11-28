@@ -1,7 +1,6 @@
 package com.gigm.testcases;
 
 import java.io.IOException;
-
 import org.testng.annotations.Test;
 
 import com.gigm.base.TestBase;
@@ -13,10 +12,11 @@ public class ValidateLogin extends TestBase{
 	HomePage home;
 	@Test(priority=0)
 	public void invalidLogin() throws IOException, InterruptedException {
-login = new LoginPage(driver);
-home = new HomePage(driver);
+		login = new LoginPage(driver);
+		home = new HomePage(driver);
 		home.ghanaAds();
 		login.loginBtn();
+		login.ValidateEmailField();
 		login.enterInvalidEmail("");
 		login.enterPassword("");
 		login.clickSignIn();
@@ -27,10 +27,13 @@ home = new HomePage(driver);
 		Thread.sleep(2000);
 		home.ghanaAds();
 		login.loginBtn();
+		login.clearEmaail();
 		login.enterValidEmail("");
+		login.clearPassword();
 		login.enterPassword("");
+		Thread.sleep(2000);
 		login.clickSignIn();
-		Thread.sleep(4000);
+		Thread.sleep(7000);
 
 	}
 }

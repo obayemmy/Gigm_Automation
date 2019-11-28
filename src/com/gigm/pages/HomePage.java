@@ -10,6 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import com.gigm.utility.Utility;
 
 public class HomePage {
+	WebElement element = null;
 	WebDriver driver;
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
@@ -33,7 +34,7 @@ public class HomePage {
 	}
 
 	public void learningAcademyLink() throws IOException {
-		driver.findElement(By.xpath(Utility.fetchLocator("learningAcademyLink_XPATH"))).click();	
+		driver.findElement(By.xpath(Utility.fetchLocator("learningAcademyLink_XPATH"))).click();
 	}
 	
 	public void travelsAndToursLink() throws IOException {
@@ -88,6 +89,15 @@ public class HomePage {
 	
 	
 	
+public void aboutUs() throws IOException {
+	driver.findElement(By.xpath(Utility.fetchLocator("aboutUsLink_XPATH"))).click();
+}
 
+public void awards() throws IOException {
+	driver.findElement(By.xpath(Utility.fetchLocator("awardsLink_XPATH="))).click();
+}
+public void busTerminal() throws IOException {
+	driver.findElement(By.xpath(Utility.fetchLocator("busTerminalLink_XPATH"))).click();
+}
 
 }
