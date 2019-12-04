@@ -16,7 +16,7 @@ public class HomePage {
 		this.driver = driver;
 	}
 
-	public void ghanaAds() throws IOException {
+	public void clickGhanaAds() throws IOException {
 		driver.findElement(By.xpath(Utility.fetchLocator("ghanaAds_XPATH"))).click();	
 	}
 	public void navigateBackward() {

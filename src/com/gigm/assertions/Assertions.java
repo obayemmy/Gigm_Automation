@@ -3,6 +3,7 @@ package com.gigm.assertions;
 import org.openqa.selenium.WebDriver;
 
 public class Assertions {
+	
 	public static  boolean validateURL1(WebDriver driver, String expURL) {
 		boolean url = false;
 		if(driver.getCurrentUrl().equalsIgnoreCase(expURL)) {
@@ -20,5 +21,16 @@ public class Assertions {
 		return title;
 		
 	}
-
+	public static  boolean validateErrorMsg(WebDriver driver, String expErrorMsg) {
+		boolean errorMsg = false;
+		if(driver.getPageSource().contains(expErrorMsg)) {
+			errorMsg= true;
+		}
+		return errorMsg;	
+	}
+	
+	
+	
+	
 }
+

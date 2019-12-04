@@ -1,40 +1,49 @@
 package com.gigm.testcases;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
-import org.testng.annotations.Test;
 
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import org.testng.asserts.Assertion;
+
+import com.gigm.assertions.Assertions;
 import com.gigm.base.TestBase;
+import com.gigm.dataSupplier.DataGenerator;
 import com.gigm.pages.HomePage;
 import com.gigm.pages.LoginPage;
 
 public class ValidateLogin extends TestBase{
 	LoginPage login;
 	HomePage home;
-	@Test(priority=0)
-	public void invalidLogin() throws IOException, InterruptedException {
+	Assertions assertion;
+	String errorMsg = "Password or username incorrect";
+	@Test(dataProvider ="Excel", dataProviderClass=DataGenerator.class)
+	public void Login(String email, String password) throws Exception{
 		login = new LoginPage(driver);
 		home = new HomePage(driver);
-		home.ghanaAds();
+		assertion = new Assertions();
+		home.clickGhanaAds();
 		login.loginBtn();
 		login.ValidateEmailField();
-		login.enterInvalidEmail("");
-		login.enterPassword("");
-		login.clickSignIn();
-	}
-
-	@Test(priority=1)
-	public void validLogin() throws InterruptedException, IOException {		
-		Thread.sleep(2000);
-		home.ghanaAds();
-		login.loginBtn();
 		login.clearEmaail();
-		login.enterValidEmail("");
+		login.enterInvalidEmail(email);
+		
 		login.clearPassword();
-		login.enterPassword("");
-		Thread.sleep(2000);
+		login.enterPassword(password);
 		login.clickSignIn();
-		Thread.sleep(7000);
-
+		Thread.sleep(3000);
+		login.validateErrorMessage();
+		Assertions.validateErrorMsg(driver, errorMsg);
 	}
+
+	
+
 }
 

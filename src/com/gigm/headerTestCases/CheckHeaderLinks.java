@@ -13,21 +13,21 @@ public class CheckHeaderLinks extends TestBase{
 	@Test(priority=0)
 	public void checkHeaderLinks() throws IOException, InterruptedException {
 		home = new HomePage(driver);
-		home.ghanaAds();
+		home.clickGhanaAds();
 		Thread.sleep(3000);
 		home.gigmExperienceLink();
 		home.learningAcademyLink();
 		Thread.sleep(4000);
 		home.navigateBackward();
 		Thread.sleep(4000);
-		home.ghanaAds();
+		home.clickGhanaAds();
 		home.gigmExperienceLink();
 		Thread.sleep(2000);
 		home.travelsAndToursLink();
 		Thread.sleep(2000);
 		home.navigateBackward();
 		Thread.sleep(2000);
-		home.ghanaAds();
+		home.clickGhanaAds();
 		home.gigmExperienceLink();
 		Thread.sleep(3000);
 		home.safetyLink();
@@ -39,10 +39,10 @@ public class CheckHeaderLinks extends TestBase{
 		js	 = (JavascriptExecutor) driver;
 		home.navigateBackward();
 		Thread.sleep(3000);
-		home.ghanaAds();
-		js.executeScript("window.scrollBy(0,1000)");
+		home.clickGhanaAds();
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		Thread.sleep(5000);
 		home.aboutUs();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 	}
 }
