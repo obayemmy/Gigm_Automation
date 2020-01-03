@@ -8,13 +8,14 @@ import com.gigm.base.TestBase;
 import com.gigm.pages.HomePage;
 import com.gigm.pages.SignUpPage;
 
-public class SignUp extends TestBase{
+public class ValidateSignUp extends TestBase{
 	SignUpPage sign;
 	HomePage homepage;
 	@Test
 	public void signUp() throws IOException, InterruptedException {
-		homepage = new HomePage(driver);
+		homepage= new HomePage(driver);
 		sign = new SignUpPage(driver);
+		homepage.clickGhanaAds();	
 		homepage.signUpBtn();
 		Thread.sleep(2000);
 		sign.enterfullName("");

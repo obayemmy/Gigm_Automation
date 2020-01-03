@@ -1,4 +1,4 @@
-package com.gigm.headerTestCases;
+package com.gigm.testcases;
 
 import java.io.IOException;
 
@@ -7,17 +7,19 @@ import org.testng.annotations.Test;
 import com.gigm.base.TestBase;
 import com.gigm.pages.HomePage;
 
-public class CheckHeaderLinks extends TestBase{
+public class ValidateHeaderLinks extends TestBase{
 	HomePage home ;
 	JavascriptExecutor js;
 	@Test(priority=0)
 	public void checkHeaderLinks() throws IOException, InterruptedException {
 		home = new HomePage(driver);
-		home.clickGhanaAds();
+		home.clickGhanaAds();	
 		Thread.sleep(3000);
 		home.gigmExperienceLink();
 		home.learningAcademyLink();
 		Thread.sleep(4000);
+		home.gigmExperienceLink();
+		Thread.sleep(2000);
 		home.navigateBackward();
 		Thread.sleep(4000);
 		home.clickGhanaAds();
@@ -32,6 +34,11 @@ public class CheckHeaderLinks extends TestBase{
 		Thread.sleep(3000);
 		home.safetyLink();
 		Thread.sleep(3000);
+		home.becomAmbassadorLink();
+		home.validateTextOnAmbassadorPage();
+		home.navigateBackward();
+		Thread.sleep(2000);
+		home.countrySwitcher();
 	}
 
 	@Test(priority=1)
@@ -44,5 +51,7 @@ public class CheckHeaderLinks extends TestBase{
 		Thread.sleep(5000);
 		home.aboutUs();
 		Thread.sleep(5000);
+		
+		
 	}
 }

@@ -15,26 +15,26 @@ import org.testng.asserts.Assertion;
 
 import com.gigm.assertions.Assertions;
 import com.gigm.base.TestBase;
-import com.gigm.dataSupplier.DataGenerator;
+import com.gigm.dataSupplier.CustomerLogin;
 import com.gigm.pages.HomePage;
 import com.gigm.pages.LoginPage;
 
 public class ValidateLogin extends TestBase{
 	LoginPage login;
+	String expTitle ="GIGM.com | Nigeria's leading transport company";
 	HomePage home;
 	Assertions assertion;
 	String errorMsg = "Password or username incorrect";
-	@Test(dataProvider ="Excel", dataProviderClass=DataGenerator.class)
+	@Test(dataProvider ="Excel", dataProviderClass=CustomerLogin.class)
 	public void Login(String email, String password) throws Exception{
 		login = new LoginPage(driver);
 		home = new HomePage(driver);
 		assertion = new Assertions();
-		home.clickGhanaAds();
+		home.clickGhanaAds();	
+		Thread.sleep(2000);
 		login.loginBtn();
-		login.ValidateEmailField();
 		login.clearEmaail();
-		login.enterInvalidEmail(email);
-		
+		login.enterInvalidEmail(email);	
 		login.clearPassword();
 		login.enterPassword(password);
 		login.clickSignIn();
@@ -42,8 +42,5 @@ public class ValidateLogin extends TestBase{
 		login.validateErrorMessage();
 		Assertions.validateErrorMsg(driver, errorMsg);
 	}
-
-	
-
 }
 

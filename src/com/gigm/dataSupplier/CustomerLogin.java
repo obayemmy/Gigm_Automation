@@ -8,7 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 
-public class DataGenerator {
+public class CustomerLogin{
 	@DataProvider(name = "Excel")
 	public static Object[][] testDataGenerator() throws Exception {
 		

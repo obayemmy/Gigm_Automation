@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import com.gigm.utility.Utility;
+import com.sun.tools.sjavac.Log;
 
 public class TestBase {
 	public WebDriver driver ;
@@ -23,39 +24,36 @@ public class TestBase {
 	@BeforeTest
 	public void setUp() throws IOException {
 		if(Utility.fetchProperty("browserName").toString().equalsIgnoreCase("chrome")) {
+			//set property and create instance of chrome browser
 			System.setProperty("webdriver.chrome.driver", projectPath+"\\Drivers\\chromedriver.exe");
 			driver =new ChromeDriver();
 		}
-
 		else if(Utility.fetchProperty("browserName").toString().equalsIgnoreCase("firefox")) {
+			//set property and create instance of chrome firefox
 			System.setProperty("webdriver.gecko.driver", projectPath+"\\Drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
-		
 		else if(Utility.fetchProperty("browserName").toString().equalsIgnoreCase("ie")) {
+			//set property and create instance of chrome ie
 			System.setProperty("webdriver.ie.driver", projectPath+"\\Drivers\\internetexplorerdriver.exe");
 			driver = new InternetExplorerDriver();
 		}else {
 			System.setProperty("webdriver.chrome.driver", projectPath+"\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
-		
 		driver.get(Utility.fetchProperty("applicationUrl").toString());
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Integer.parseInt((String) Utility.fetchProperty("implicit.wait")), TimeUnit.SECONDS);
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(Integer.parseInt((String) Utility.fetchProperty("implicit.wait")), TimeUnit.SECONDS);
 	}
-
-
-
-
-
 
 
 
 	@AfterTest
 	public void tearDown() {
 		driver.close();
-
+	
 	}
 
 }

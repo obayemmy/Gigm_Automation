@@ -17,16 +17,16 @@ String	errorMsg="Password or username incorrect";
 	}
 
 	public void loginBtn() throws IOException {
-		driver.findElement(By.id(Utility.fetchLocator("loginModal_ID"))).click();	
+		driver.findElement(By.xpath(Utility.fetchLocator("loginModal_XPATH"))).click();	
 	}
 
 	/*public void enterValidEmail( String email) throws IOException {
 		driver.findElement(By.xpath(Utility.fetchLocator("email_XPATH"))).sendKeys(Utility.fetchLocator("email_TEXT"));
 	}*/
 
-	public void ValidateEmailField() {
+	/*public void ValidateEmailField() {
 		Assert.assertEquals("email_ID", "email_ID");
-	}
+	}*/
 
 	public void enterInvalidEmail( String email) throws IOException {
 		driver.findElement(By.xpath(Utility.fetchLocator("email_XPATH"))).sendKeys(email);
@@ -52,8 +52,6 @@ String	errorMsg="Password or username incorrect";
 		}
 	}
 	
-	
-
 	public void clickSignIn() throws IOException {
 		driver.findElement(By.id(Utility.fetchLocator("LoginBtn_ID"))).click();
 	}

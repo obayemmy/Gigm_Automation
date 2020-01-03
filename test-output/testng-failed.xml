@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" parallel="tests" name="Failed suite [Gigm suite]" guice-stage="DEVELOPMENT" verbose="6">
-  <test thread-count="1" parallel="tests" name="headerLinks(failed)" verbose="6">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.gigm.headerTestCases.CheckHeaderLinks">
+      <class name="com.gigm.testcases.ValidateAmbassador">
         <methods>
-          <include name="FooterlinksCheck"/>
-          <include name="checkHeaderLinks"/>
+          <include name="CheckAmbassador"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.gigm.headerTestCases.CheckHeaderLinks -->
+      </class> <!-- com.gigm.testcases.ValidateAmbassador -->
     </classes>
-  </test> <!-- headerLinks(failed) -->
-</suite> <!-- Failed suite [Gigm suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
