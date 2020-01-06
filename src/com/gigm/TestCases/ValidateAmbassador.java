@@ -13,10 +13,9 @@ public class ValidateAmbassador extends TestBase {
 	@Test
 	public void CheckAmbassador() throws IOException, InterruptedException {
 		home = new HomePage(driver);
-	//	home.clickGhanaAds();
+		home.clickGhanaAds();
 		Thread.sleep(2000);
 		home.becomAmbassadorLink();
-		Thread.sleep(2000);
 
 	}
 }

@@ -21,7 +21,6 @@ import com.gigm.pages.LoginPage;
 
 public class ValidateLogin extends TestBase{
 	LoginPage login;
-	String expTitle ="GIGM.com | Nigeria's leading transport company";
 	HomePage home;
 	Assertions assertion;
 	String errorMsg = "Password or username incorrect";

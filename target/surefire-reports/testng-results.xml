@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-01-06T00:23:28Z" name="Gigm suite" finished-at="2020-01-06T00:27:22Z" duration-ms="234937">
+    <groups>
+    </groups>
+    <test started-at="2020-01-06T00:23:28Z" name="AllLinks" finished-at="2020-01-06T00:25:22Z" duration-ms="114723">
+      <class name="com.gigm.testcases.ValidateHeaderLinks">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateHeaderLinks@6dde5c8c]" started-at="2020-01-06T01:23:28Z" name="setUp" finished-at="2020-01-06T01:23:51Z" duration-ms="23362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkHeaderLinks()[pri:0, instance:com.gigm.testcases.ValidateHeaderLinks@6dde5c8c]" started-at="2020-01-06T01:23:51Z" name="checkHeaderLinks" finished-at="2020-01-06T01:25:07Z" duration-ms="75731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkHeaderLinks -->
+        <test-method signature="FooterlinksCheck()[pri:1, instance:com.gigm.testcases.ValidateHeaderLinks@6dde5c8c]" started-at="2020-01-06T01:25:07Z" name="FooterlinksCheck" finished-at="2020-01-06T01:25:22Z" duration-ms="15547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FooterlinksCheck -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateHeaderLinks@6dde5c8c]" started-at="2020-01-06T01:25:22Z" name="tearDown" finished-at="2020-01-06T01:25:22Z" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.gigm.testcases.ValidateHeaderLinks -->
+    </test> <!-- AllLinks -->
+    <test started-at="2020-01-06T00:25:22Z" name="Login" finished-at="2020-01-06T00:26:12Z" duration-ms="49818">
+      <class name="com.gigm.testcases.ValidateLogin">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateLogin@543e710e]" started-at="2020-01-06T01:25:22Z" name="setUp" finished-at="2020-01-06T01:25:44Z" duration-ms="22146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateLogin@543e710e]" started-at="2020-01-06T01:25:45Z" name="Login" data-provider="Excel" finished-at="2020-01-06T01:25:54Z" duration-ms="8568" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[obayemi.oje@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Obayemi92@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateLogin@543e710e]" started-at="2020-01-06T01:25:54Z" name="Login" data-provider="Excel" finished-at="2020-01-06T01:26:02Z" duration-ms="8090" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ghensky.oje@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Obayemi92@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateLogin@543e710e]" started-at="2020-01-06T01:26:02Z" name="Login" data-provider="Excel" finished-at="2020-01-06T01:26:12Z" duration-ms="10169" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[obayemmy92@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Obayemi92@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateLogin@543e710e]" started-at="2020-01-06T01:26:12Z" name="tearDown" finished-at="2020-01-06T01:26:12Z" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.gigm.testcases.ValidateLogin -->
+    </test> <!-- Login -->
+    <test started-at="2020-01-06T00:26:12Z" name="SignUp" finished-at="2020-01-06T00:26:49Z" duration-ms="36975">
+      <class name="com.gigm.testcases.ValidateSignUp">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateSignUp@69379752]" started-at="2020-01-06T01:26:12Z" name="setUp" finished-at="2020-01-06T01:26:41Z" duration-ms="29086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="signUp()[pri:0, instance:com.gigm.testcases.ValidateSignUp@69379752]" started-at="2020-01-06T01:26:41Z" name="signUp" finished-at="2020-01-06T01:26:49Z" duration-ms="7843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateSignUp@69379752]" started-at="2020-01-06T01:26:49Z" name="tearDown" finished-at="2020-01-06T01:26:49Z" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.gigm.testcases.ValidateSignUp -->
+    </test> <!-- SignUp -->
+    <test started-at="2020-01-06T00:26:49Z" name="Ambassador" finished-at="2020-01-06T00:27:22Z" duration-ms="33354">
+      <class name="com.gigm.testcases.ValidateAmbassador">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateAmbassador@5e57643e]" started-at="2020-01-06T01:26:49Z" name="setUp" finished-at="2020-01-06T01:27:13Z" duration-ms="24284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CheckAmbassador()[pri:0, instance:com.gigm.testcases.ValidateAmbassador@5e57643e]" started-at="2020-01-06T01:27:13Z" name="CheckAmbassador" finished-at="2020-01-06T01:27:22Z" duration-ms="9020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckAmbassador -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateAmbassador@5e57643e]" started-at="2020-01-06T01:27:22Z" name="tearDown" finished-at="2020-01-06T01:27:22Z" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.gigm.testcases.ValidateAmbassador -->
+    </test> <!-- Ambassador -->
+  </suite> <!-- Gigm suite -->
+</testng-results>

@@ -15,7 +15,7 @@ public class SignUpPage {
 	}
 
 	
-	public void enterfullName( String email) throws IOException {
+	public void enterfullName( String fullName) throws IOException {
 		driver.findElement(By.id(Utility.fetchLocator("fullNameFiedl_ID"))).sendKeys(Utility.fetchLocator("fullName_TEXT"));
 	}
 	
@@ -27,15 +27,15 @@ public class SignUpPage {
 		driver.findElement(By.xpath(Utility.fetchLocator("femaleSelected_XPATH"))).click();
 	}
 	
-	public void entermobileNumber( String email) throws IOException {
+	public void entermobileNumber( String phoneNumberl) throws IOException {
 		driver.findElement(By.id(Utility.fetchLocator("phoneNumberField_ID"))).sendKeys(Utility.fetchLocator("phoneNumber"));
 	}
 	
-	public void enterPassword( String email) throws IOException {
+	public void enterPassword( String password) throws IOException {
 		driver.findElement(By.xpath(Utility.fetchLocator("passwordField_XPATH"))).sendKeys(Utility.fetchLocator("password_TEXT"));
 	}
 	
-	public void confirmPassword( String email) throws IOException {
+	public void confirmPassword( String confirmPassword) throws IOException {
 		driver.findElement(By.id(Utility.fetchLocator("confirmPassword_ID"))).sendKeys(Utility.fetchLocator("confirmPassword"));
 	}
 	
@@ -43,7 +43,7 @@ public class SignUpPage {
 		driver.findElement(By.id(Utility.fetchLocator("emailField_ID"))).sendKeys(Utility.fetchLocator("email_TEXT"));
 	}
 	
-	public void clickSignUpVtn( String email) throws IOException {
+	public void clickSignUpVtn() throws IOException {
 		driver.findElement(By.id(Utility.fetchLocator("signUpBtn_ID"))).click();
 	}
 	

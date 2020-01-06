@@ -26,8 +26,10 @@ public class HomePage {
 	public void clickGhanaAds() throws IOException {
 		try {
 		driver.findElement(By.xpath(Utility.fetchLocator("ghanaAds_XPATH"))).click();	
-	}catch (ElementNotVisibleException e) {
-		System.out.println("Nsukka Ads is not displayed");
+	}catch (Exception  exp) {
+		System.out.println("Nsukka Ads is not displayed "  + exp.getCause());
+		System.out.println("the reason is " + exp.getMessage());
+	//	exp.printStackTrace();
 	}
 	}
 		
