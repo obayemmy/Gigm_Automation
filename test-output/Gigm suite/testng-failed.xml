@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="1" parallel="tests" name="Failed suite [Gigm suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="1" parallel="tests" name="SignUp(failed)">
-    <classes>
-      <class name="com.gigm.testcases.ValidateSignUp">
-        <methods>
-          <include name="signUp"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.gigm.testcases.ValidateSignUp -->
-    </classes>
-  </test> <!-- SignUp(failed) -->
   <test thread-count="1" parallel="tests" name="Ambassador(failed)">
     <classes>
       <class name="com.gigm.testcases.ValidateAmbassador">

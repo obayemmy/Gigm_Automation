@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="7" passed="7" failed="0" skipped="0">
+<testng-results total="10" passed="7" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-06T00:23:28Z" name="Gigm suite" finished-at="2020-01-06T00:27:22Z" duration-ms="234937">
+  <suite started-at="2020-01-09T14:48:31Z" name="Gigm suite" finished-at="2020-01-09T14:53:25Z" duration-ms="294470">
     <groups>
     </groups>
-    <test started-at="2020-01-06T00:23:28Z" name="AllLinks" finished-at="2020-01-06T00:25:22Z" duration-ms="114723">
+    <test started-at="2020-01-09T14:48:31Z" name="AllLinks" finished-at="2020-01-09T14:49:55Z" duration-ms="84592">
       <class name="com.gigm.testcases.ValidateHeaderLinks">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateHeaderLinks@6dde5c8c]" started-at="2020-01-06T01:23:28Z" name="setUp" finished-at="2020-01-06T01:23:51Z" duration-ms="23362" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateHeaderLinks@6dde5c8c]" started-at="2020-01-09T15:48:31Z" name="setUp" finished-at="2020-01-09T15:48:48Z" duration-ms="17160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkHeaderLinks()[pri:0, instance:com.gigm.testcases.ValidateHeaderLinks@6dde5c8c]" started-at="2020-01-06T01:23:51Z" name="checkHeaderLinks" finished-at="2020-01-06T01:25:07Z" duration-ms="75731" status="PASS">
+        <test-method signature="checkHeaderLinks()[pri:0, instance:com.gigm.testcases.ValidateHeaderLinks@6dde5c8c]" started-at="2020-01-09T15:48:48Z" name="checkHeaderLinks" finished-at="2020-01-09T15:49:40Z" duration-ms="52335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkHeaderLinks -->
-        <test-method signature="FooterlinksCheck()[pri:1, instance:com.gigm.testcases.ValidateHeaderLinks@6dde5c8c]" started-at="2020-01-06T01:25:07Z" name="FooterlinksCheck" finished-at="2020-01-06T01:25:22Z" duration-ms="15547" status="PASS">
+        <test-method signature="FooterlinksCheck()[pri:1, instance:com.gigm.testcases.ValidateHeaderLinks@6dde5c8c]" started-at="2020-01-09T15:49:40Z" name="FooterlinksCheck" finished-at="2020-01-09T15:49:55Z" duration-ms="15000" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FooterlinksCheck -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateHeaderLinks@6dde5c8c]" started-at="2020-01-06T01:25:22Z" name="tearDown" finished-at="2020-01-06T01:25:22Z" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateHeaderLinks@6dde5c8c]" started-at="2020-01-09T15:49:55Z" name="tearDown" finished-at="2020-01-09T15:49:55Z" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.gigm.testcases.ValidateHeaderLinks -->
     </test> <!-- AllLinks -->
-    <test started-at="2020-01-06T00:25:22Z" name="Login" finished-at="2020-01-06T00:26:12Z" duration-ms="49818">
+    <test started-at="2020-01-09T14:49:56Z" name="Login" finished-at="2020-01-09T14:50:45Z" duration-ms="49619">
       <class name="com.gigm.testcases.ValidateLogin">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateLogin@543e710e]" started-at="2020-01-06T01:25:22Z" name="setUp" finished-at="2020-01-06T01:25:44Z" duration-ms="22146" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateLogin@543e710e]" started-at="2020-01-09T15:49:56Z" name="setUp" finished-at="2020-01-09T15:50:24Z" duration-ms="28607" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateLogin@543e710e]" started-at="2020-01-06T01:25:45Z" name="Login" data-provider="Excel" finished-at="2020-01-06T01:25:54Z" duration-ms="8568" status="PASS">
+        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateLogin@543e710e]" started-at="2020-01-09T15:50:24Z" name="Login" data-provider="Excel" finished-at="2020-01-09T15:50:27Z" duration-ms="2146" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -44,10 +44,39 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.gigm.utility.Utility.fetchLocator(Utility.java:23)
+	at com.gigm.pages.LoginPage.clearEmaail(LoginPage.java:36)
+	at com.gigm.testcases.ValidateLogin.Login(ValidateLogin.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateLogin@543e710e]" started-at="2020-01-06T01:25:54Z" name="Login" data-provider="Excel" finished-at="2020-01-06T01:26:02Z" duration-ms="8090" status="PASS">
+        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateLogin@543e710e]" started-at="2020-01-09T15:50:27Z" name="Login" data-provider="Excel" finished-at="2020-01-09T15:50:35Z" duration-ms="8109" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -60,10 +89,66 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="#" id="lmodal">...</a> is not clickable at point (1423, 30). Other element would receive the click: <div id="myLogin" class="Mymodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: block;">...</div>
+  (Session info: chrome=79.0.3945.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QA-SYSTEM', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.11 (eaaae9de6b899..., userDataDir: C:\Users\DEVELO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55062}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fbdd0b7a0f9fc90b99ae7ac29ffc2eed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" id="lmodal">...</a> is not clickable at point (1423, 30). Other element would receive the click: <div id="myLogin" class="Mymodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: block;">...</div>
+  (Session info: chrome=79.0.3945.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QA-SYSTEM', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.11 (eaaae9de6b899..., userDataDir: C:\Users\DEVELO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55062}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fbdd0b7a0f9fc90b99ae7ac29ffc2eed
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.gigm.pages.LoginPage.loginBtn(LoginPage.java:20)
+	at com.gigm.testcases.ValidateLogin.Login(ValidateLogin.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateLogin@543e710e]" started-at="2020-01-06T01:26:02Z" name="Login" data-provider="Excel" finished-at="2020-01-06T01:26:12Z" duration-ms="10169" status="PASS">
+        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateLogin@543e710e]" started-at="2020-01-09T15:50:35Z" name="Login" data-provider="Excel" finished-at="2020-01-09T15:50:43Z" duration-ms="8082" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -76,46 +161,234 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="#" id="lmodal">...</a> is not clickable at point (1423, 30). Other element would receive the click: <div id="myLogin" class="Mymodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: block;">...</div>
+  (Session info: chrome=79.0.3945.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QA-SYSTEM', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.11 (eaaae9de6b899..., userDataDir: C:\Users\DEVELO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55062}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fbdd0b7a0f9fc90b99ae7ac29ffc2eed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" id="lmodal">...</a> is not clickable at point (1423, 30). Other element would receive the click: <div id="myLogin" class="Mymodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: block;">...</div>
+  (Session info: chrome=79.0.3945.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'QA-SYSTEM', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.11 (eaaae9de6b899..., userDataDir: C:\Users\DEVELO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55062}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fbdd0b7a0f9fc90b99ae7ac29ffc2eed
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.gigm.pages.LoginPage.loginBtn(LoginPage.java:20)
+	at com.gigm.testcases.ValidateLogin.Login(ValidateLogin.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateLogin@543e710e]" started-at="2020-01-06T01:26:12Z" name="tearDown" finished-at="2020-01-06T01:26:12Z" duration-ms="53" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateLogin@543e710e]" started-at="2020-01-09T15:50:43Z" name="tearDown" finished-at="2020-01-09T15:50:45Z" duration-ms="2318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.gigm.testcases.ValidateLogin -->
     </test> <!-- Login -->
-    <test started-at="2020-01-06T00:26:12Z" name="SignUp" finished-at="2020-01-06T00:26:49Z" duration-ms="36975">
+    <test started-at="2020-01-09T14:50:45Z" name="SignUp" finished-at="2020-01-09T14:51:42Z" duration-ms="56912">
       <class name="com.gigm.testcases.ValidateSignUp">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateSignUp@69379752]" started-at="2020-01-06T01:26:12Z" name="setUp" finished-at="2020-01-06T01:26:41Z" duration-ms="29086" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateSignUp@27fe3806]" started-at="2020-01-09T15:50:45Z" name="setUp" finished-at="2020-01-09T15:51:11Z" duration-ms="25990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signUp()[pri:0, instance:com.gigm.testcases.ValidateSignUp@69379752]" started-at="2020-01-06T01:26:41Z" name="signUp" finished-at="2020-01-06T01:26:49Z" duration-ms="7843" status="PASS">
+        <test-method signature="signUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateSignUp@27fe3806]" started-at="2020-01-09T15:51:11Z" name="signUp" data-provider="Register" finished-at="2020-01-09T15:51:25Z" duration-ms="13882" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Remi Yinka ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[07062356377]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[remi.adugbo@gmail.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateSignUp@69379752]" started-at="2020-01-06T01:26:49Z" name="tearDown" finished-at="2020-01-06T01:26:49Z" duration-ms="46" status="PASS">
+        <test-method signature="signUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateSignUp@27fe3806]" started-at="2020-01-09T15:51:25Z" name="signUp" data-provider="Register" finished-at="2020-01-09T15:51:34Z" duration-ms="9041" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Femi Bunmi ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[07062356377]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[femi.adugbo@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method signature="signUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateSignUp@27fe3806]" started-at="2020-01-09T15:51:34Z" name="signUp" data-provider="Register" finished-at="2020-01-09T15:51:42Z" duration-ms="7884" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kemi Funmi ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[07062356377]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password@]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[password@]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[kemi.funmi@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateSignUp@27fe3806]" started-at="2020-01-09T15:51:42Z" name="tearDown" finished-at="2020-01-09T15:51:42Z" duration-ms="75" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.gigm.testcases.ValidateSignUp -->
     </test> <!-- SignUp -->
-    <test started-at="2020-01-06T00:26:49Z" name="Ambassador" finished-at="2020-01-06T00:27:22Z" duration-ms="33354">
+    <test started-at="2020-01-09T14:51:42Z" name="Ambassador" finished-at="2020-01-09T14:52:20Z" duration-ms="38096">
       <class name="com.gigm.testcases.ValidateAmbassador">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateAmbassador@5e57643e]" started-at="2020-01-06T01:26:49Z" name="setUp" finished-at="2020-01-06T01:27:13Z" duration-ms="24284" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateAmbassador@133e16fd]" started-at="2020-01-09T15:51:42Z" name="setUp" finished-at="2020-01-09T15:52:00Z" duration-ms="17980" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="CheckAmbassador()[pri:0, instance:com.gigm.testcases.ValidateAmbassador@5e57643e]" started-at="2020-01-06T01:27:13Z" name="CheckAmbassador" finished-at="2020-01-06T01:27:22Z" duration-ms="9020" status="PASS">
+        <test-method signature="CheckAmbassador()[pri:0, instance:com.gigm.testcases.ValidateAmbassador@133e16fd]" started-at="2020-01-09T15:52:00Z" name="CheckAmbassador" finished-at="2020-01-09T15:52:20Z" duration-ms="20060" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckAmbassador -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateAmbassador@5e57643e]" started-at="2020-01-06T01:27:22Z" name="tearDown" finished-at="2020-01-06T01:27:22Z" duration-ms="49" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateAmbassador@133e16fd]" started-at="2020-01-09T15:52:20Z" name="tearDown" finished-at="2020-01-09T15:52:20Z" duration-ms="54" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.gigm.testcases.ValidateAmbassador -->
     </test> <!-- Ambassador -->
+    <test started-at="2020-01-09T14:52:20Z" name="Booking" finished-at="2020-01-09T14:53:25Z" duration-ms="65166">
+      <class name="com.gigm.testcases.ValidateBooking">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateBooking@140e5a13]" started-at="2020-01-09T15:52:20Z" name="setUp" finished-at="2020-01-09T15:52:38Z" duration-ms="18097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="bookAticket(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateBooking@140e5a13]" started-at="2020-01-09T15:52:38Z" name="bookAticket" data-provider="Booker" finished-at="2020-01-09T15:53:25Z" duration-ms="46958" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lateef Alagbada]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[obayemmy92@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[07062356377]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Michael Oworo]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[08062356377]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookAticket -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateBooking@140e5a13]" started-at="2020-01-09T15:53:25Z" name="tearDown" finished-at="2020-01-09T15:53:25Z" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.gigm.testcases.ValidateBooking -->
+    </test> <!-- Booking -->
   </suite> <!-- Gigm suite -->
 </testng-results>

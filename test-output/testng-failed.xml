@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.gigm.testcases.ValidateAmbassador">
+      <class name="com.gigm.testcases.ValidateBooking">
         <methods>
-          <include name="CheckAmbassador"/>
           <include name="setUp"/>
+          <include name="bookAticket" invocation-numbers="0"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.gigm.testcases.ValidateAmbassador -->
+      </class> <!-- com.gigm.testcases.ValidateBooking -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

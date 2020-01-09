@@ -1,16 +1,18 @@
 package com.gigm.pages;
 
-import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
 import com.gigm.utility.Utility;
 
 public class HomePage {
@@ -138,21 +140,51 @@ public void busTerminal() throws IOException {
 
 public void departureTerminal() throws IOException {
 	driver.findElement(By.xpath(Utility.fetchLocator("departureTerminal_XPATH"))).click();
+	
 }
 
 public void departRoutel() throws IOException {
-	driver.findElement(By.xpath(Utility.fetchLocator("departRoute_XPATH"))).click();
+	//departRoute_XPATH
+	driver.findElement(By.xpath(Utility.fetchLocator("akowonjoRoute_XPATH"))).click();
 }
 
 public void arrivalTerminal() throws IOException {
-	driver.findElement(By.xpath(Utility.fetchLocator("arrivalTerminal_XPATH"))).click();
+	driver.findElement(By.xpath(Utility.fetchLocator("abujaRoute_XPATH"))).click();
 }
 public void arrivalRoute() throws IOException {
+	//arrivalRoute_XPATH
 	driver.findElement(By.xpath(Utility.fetchLocator("arrivalRoute_XPATH"))).click();
 }
-
+//Select future date dynamically
 public void dateField() throws IOException {
-	driver.findElement(By.xpath(Utility.fetchLocator("dateField_XPATH"))).click();
+	java.util.Date date = new Date(0, 0, 0);
+	 
+	Calendar calendar = Calendar.getInstance();
+	calendar.setTime(date);
+	calendar.add(Calendar.DATE, +1);
+	date = calendar.getTime(); 
+	String tommorowsDate = new SimpleDateFormat("MM/dd/yyyy").format(date);
+	//enter tomorrow's date in the field
+	WebElement tomDate = driver.findElement(By.xpath(Utility.fetchLocator("dateField_XPATH")));
+	tomDate.sendKeys(tommorowsDate);
+	System.out.println("tomorrow date is " + tommorowsDate );
+	/*Calendar cal = Calendar.getInstance();
+	cal.setTime(date);
+	// Add one day to the today's date
+	cal.add(Calendar.DATE, 1);
+	
+	String strMonth = cal.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.ENGLISH);
+
+	String tommorowsDate = new SimpleDateFormat("MM/dd/yyyy").format(cal.getTime());
+	System.out.println(tommorowsDate);*/
+	
+/*	 Calendar calendar = Calendar.getInstance();
+	WebElement departDate =driver.findElement(By.xpath(Utility.fetchLocator("dateField_XPATH")));
+	departDate.click();
+	 departDate = (WebElement) calendar.getTime();
+	 calendar.add(Calendar.DAY_OF_YEAR, 1);*/
+	
+	
 }
 
 public void day() throws IOException {

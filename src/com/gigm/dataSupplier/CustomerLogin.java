@@ -10,7 +10,7 @@ import org.testng.annotations.DataProvider;
 
 public class CustomerLogin{
 	@DataProvider(name = "Excel")
-	public static Object[][] testDataGenerator() throws Exception {
+	public static Object[][] customerLogin() throws Exception {
 		
 		FileInputStream file = new FileInputStream("./TestData/LoginData.xlsx");
 		XSSFWorkbook book = new XSSFWorkbook(file);
