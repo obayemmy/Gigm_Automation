@@ -24,7 +24,7 @@ public class ValidateLogin extends TestBase{
 	HomePage home;
 	Assertions assertion;
 	String errorMsg = "Password or username incorrect";
-	@Test(dataProvider ="Excel", dataProviderClass=CustomerLogin.class)
+	@Test(dataProvider ="customerLogin", dataProviderClass=CustomerLogin.class)
 	public void Login(String email, String password) throws Exception{
 		login = new LoginPage(driver);
 		home = new HomePage(driver);
@@ -32,8 +32,8 @@ public class ValidateLogin extends TestBase{
 		home.clickGhanaAds();	
 		Thread.sleep(2000);
 		login.loginBtn();
-		login.clearEmaail();
-		login.enterInvalidEmail(email);	
+	//	login.clearEmaail();
+		//login.enterInvalidEmail(email);	
 		login.clearPassword();
 		login.enterPassword(password);
 		login.clickSignIn();

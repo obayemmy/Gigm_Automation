@@ -9,12 +9,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 
 public class CustomerLogin{
-	@DataProvider(name = "Excel")
+	@DataProvider(name = "customerLogin")
 	public static Object[][] customerLogin() throws Exception {
 		
-		FileInputStream file = new FileInputStream("./TestData/LoginData.xlsx");
+		FileInputStream file = new FileInputStream("./TestData/customerSignIn.xlsx");
 		XSSFWorkbook book = new XSSFWorkbook(file);
-		XSSFSheet loginSheet = book.getSheet("Login");
+		XSSFSheet loginSheet = book.getSheet("customer");
 		int numberOfData = loginSheet.getPhysicalNumberOfRows();
 		Object [][] testData = new Object[numberOfData][2];
 		

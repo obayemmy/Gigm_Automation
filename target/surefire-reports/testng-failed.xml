@@ -40,25 +40,60 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.gigm.testcases.ValidateBooking -->
-      <class name="com.gigm.testcases.ValidateHeaderLinks">
+      <class name="com.gigm.testcases.ValidateLogin">
         <methods>
+          <include name="Login" invocation-numbers="1 2"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.gigm.testcases.ValidateHeaderLinks -->
+      </class> <!-- com.gigm.testcases.ValidateLogin -->
       <class name="com.gigm.testcases.ValidateAmbassador">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.gigm.testcases.ValidateAmbassador -->
+      <class name="com.gigm.testcases.ValidateHeaderLinks">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.gigm.testcases.ValidateHeaderLinks -->
+    </classes>
+  </test> <!-- Login(failed) -->
+  <test parallel="tests" name="Booking(failed)">
+    <classes>
+      <class name="com.gigm.testcases.ValidateSignUp">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.gigm.testcases.ValidateSignUp -->
+      <class name="com.gigm.testcases.ValidateBooking">
+        <methods>
+          <include name="setUp"/>
+          <include name="bookAticket" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.gigm.testcases.ValidateBooking -->
       <class name="com.gigm.testcases.ValidateLogin">
         <methods>
-          <include name="Login" invocation-numbers="0 1 2"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.gigm.testcases.ValidateLogin -->
+      <class name="com.gigm.testcases.ValidateAmbassador">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.gigm.testcases.ValidateAmbassador -->
+      <class name="com.gigm.testcases.ValidateHeaderLinks">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.gigm.testcases.ValidateHeaderLinks -->
     </classes>
-  </test> <!-- Login(failed) -->
+  </test> <!-- Booking(failed) -->
 </suite> <!-- Failed suite [Gigm suite] -->

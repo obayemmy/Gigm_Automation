@@ -14,7 +14,7 @@ public class ValidateSignUp extends TestBase{
 	SignUpPage signUp;
 	HomePage homepage;
 	@Test(dataProvider ="Register", dataProviderClass=CustomerSignUp.class)
-	public void signUp(String fullName,  String phoneNumber, String password, String confirmPassword,  String email) throws IOException, InterruptedException {
+	public void signUp(String fullName,  String phoneNumber, String password, String confirmPassword,  String Cemail) throws IOException, InterruptedException {
 		homepage= new HomePage(driver);
 		signUp = new SignUpPage(driver);
 		homepage.clickGhanaAds();	
@@ -26,7 +26,7 @@ public class ValidateSignUp extends TestBase{
 		signUp.entermobileNumber(phoneNumber);
 		signUp.enterPassword(password);
 		signUp.confirmPassword(confirmPassword);
-		signUp.enterEmail(email);
+		signUp.enterEmail(Cemail);
 		signUp.validateTandC();
 		signUp.clickSignUpVtn();
 		signUp.GIGMLogo();

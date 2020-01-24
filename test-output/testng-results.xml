@@ -1,52 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-09T18:32:46 WAT" name="Default suite" finished-at="2020-01-09T18:35:32 WAT" duration-ms="165811">
+  <suite started-at="2020-01-17T06:28:57 WAT" name="Default suite" finished-at="2020-01-17T06:29:52 WAT" duration-ms="54788">
     <groups>
     </groups>
-    <test started-at="2020-01-09T18:32:46 WAT" name="Default test" finished-at="2020-01-09T18:35:32 WAT" duration-ms="165811">
-      <class name="com.gigm.testcases.ValidateBooking">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateBooking@223f3642]" started-at="2020-01-09T18:32:46 WAT" name="setUp" finished-at="2020-01-09T18:33:24 WAT" duration-ms="38312" status="PASS">
+    <test started-at="2020-01-17T06:28:57 WAT" name="Default test" finished-at="2020-01-17T06:29:52 WAT" duration-ms="54788">
+      <class name="com.gigm.testcases.ValidateSignUp">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateSignUp@223f3642]" started-at="2020-01-17T06:28:57 WAT" name="setUp" finished-at="2020-01-17T06:29:19 WAT" duration-ms="21885" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="bookAticket(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateBooking@223f3642]" started-at="2020-01-09T18:33:25 WAT" name="bookAticket" data-provider="Booker" finished-at="2020-01-09T18:35:32 WAT" duration-ms="126957" status="PASS">
+        <test-method signature="signUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateSignUp@223f3642]" started-at="2020-01-17T06:29:20 WAT" name="signUp" data-provider="Register" finished-at="2020-01-17T06:29:34 WAT" duration-ms="13602" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Lateef Alagbada]]>
+                <![CDATA[Remi Yinka ]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[obayemmy92@gmail.com]]>
+                <![CDATA[07062356377]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[07062356377]]>
+                <![CDATA[Password]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Michael Oworo]]>
+                <![CDATA[Password]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[08062356377]]>
+                <![CDATA[remi.adugbo@gmail.com]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookAticket -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateBooking@223f3642]" started-at="2020-01-09T18:35:32 WAT" name="tearDown" finished-at="2020-01-09T18:35:32 WAT" duration-ms="59" status="PASS">
+        </test-method> <!-- signUp -->
+        <test-method signature="signUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateSignUp@223f3642]" started-at="2020-01-17T06:29:34 WAT" name="signUp" data-provider="Register" finished-at="2020-01-17T06:29:43 WAT" duration-ms="9263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Femi Bunmi ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[07062356377]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[femi.adugbo@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method signature="signUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateSignUp@223f3642]" started-at="2020-01-17T06:29:43 WAT" name="signUp" data-provider="Register" finished-at="2020-01-17T06:29:52 WAT" duration-ms="8825" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kemi Funmi ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[07062356377]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password@]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[password@]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[kemi.funmi@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateSignUp@223f3642]" started-at="2020-01-17T06:29:52 WAT" name="tearDown" finished-at="2020-01-17T06:29:52 WAT" duration-ms="86" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.gigm.testcases.ValidateBooking -->
+      </class> <!-- com.gigm.testcases.ValidateSignUp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
