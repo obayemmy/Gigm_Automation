@@ -1,69 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-24T16:01:42 WAT" name="Default suite" finished-at="2020-01-24T16:02:36 WAT" duration-ms="54822">
+  <suite started-at="2020-01-24T16:42:35 WAT" name="Default suite" finished-at="2020-01-24T16:43:19 WAT" duration-ms="43684">
     <groups>
     </groups>
-    <test started-at="2020-01-24T16:01:42 WAT" name="Default test" finished-at="2020-01-24T16:02:36 WAT" duration-ms="54822">
-      <class name="com.gigm.testcases.ValidateLogin">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateLogin@223f3642]" started-at="2020-01-24T16:01:42 WAT" name="setUp" finished-at="2020-01-24T16:02:07 WAT" duration-ms="25233" status="PASS">
+    <test started-at="2020-01-24T16:42:35 WAT" name="Default test" finished-at="2020-01-24T16:43:19 WAT" duration-ms="43684">
+      <class name="com.gigm.testcases.ValidateBooking">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateBooking@223f3642]" started-at="2020-01-24T16:42:35 WAT" name="setUp" finished-at="2020-01-24T16:42:49 WAT" duration-ms="14225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateLogin@223f3642]" started-at="2020-01-24T16:02:07 WAT" name="Login" data-provider="customerLogin" finished-at="2020-01-24T16:02:15 WAT" duration-ms="7939" status="PASS">
+        <test-method signature="bookAticket(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateBooking@223f3642]" started-at="2020-01-24T16:42:50 WAT" name="bookAticket" data-provider="Booker" finished-at="2020-01-24T16:43:19 WAT" duration-ms="28916" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[obayemi.oje@gmail.com]]>
+                <![CDATA[Lateef Alagbada]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Ghensky]]>
+                <![CDATA[obayemmy92@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[07062356377]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Michael Oworo]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[08062356377]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateLogin@223f3642]" started-at="2020-01-24T16:02:15 WAT" name="Login" data-provider="customerLogin" finished-at="2020-01-24T16:02:23 WAT" duration-ms="7751" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ghensky.oje@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateLogin@223f3642]" started-at="2020-01-24T16:02:23 WAT" name="Login" data-provider="customerLogin" finished-at="2020-01-24T16:02:34 WAT" duration-ms="11244" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Obayemi92@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Obayemi92@]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateLogin@223f3642]" started-at="2020-01-24T16:02:34 WAT" name="tearDown" finished-at="2020-01-24T16:02:36 WAT" duration-ms="2067" status="PASS">
+        </test-method> <!-- bookAticket -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateBooking@223f3642]" started-at="2020-01-24T16:43:19 WAT" name="tearDown" finished-at="2020-01-24T16:43:19 WAT" duration-ms="56" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.gigm.testcases.ValidateLogin -->
+      </class> <!-- com.gigm.testcases.ValidateBooking -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
