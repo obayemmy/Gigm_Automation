@@ -32,8 +32,8 @@ public class ValidateLogin extends TestBase{
 		home.clickGhanaAds();	
 		Thread.sleep(2000);
 		login.loginBtn();
-	//	login.clearEmaail();
-		//login.enterInvalidEmail(email);	
+	login.clearEmaail();
+		login.enterValidEmail(email);	
 		login.clearPassword();
 		login.enterPassword(password);
 		login.clickSignIn();
