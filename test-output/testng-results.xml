@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-01-24T16:42:35 WAT" name="Default suite" finished-at="2020-01-24T16:43:19 WAT" duration-ms="43684">
+  <suite started-at="2020-01-24T17:11:24 WAT" name="Default suite" finished-at="2020-01-24T17:12:17 WAT" duration-ms="53322">
     <groups>
     </groups>
-    <test started-at="2020-01-24T16:42:35 WAT" name="Default test" finished-at="2020-01-24T16:43:19 WAT" duration-ms="43684">
+    <test started-at="2020-01-24T17:11:24 WAT" name="Default test" finished-at="2020-01-24T17:12:17 WAT" duration-ms="53322">
       <class name="com.gigm.testcases.ValidateBooking">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateBooking@223f3642]" started-at="2020-01-24T16:42:35 WAT" name="setUp" finished-at="2020-01-24T16:42:49 WAT" duration-ms="14225" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gigm.testcases.ValidateBooking@223f3642]" started-at="2020-01-24T17:11:24 WAT" name="setUp" finished-at="2020-01-24T17:11:37 WAT" duration-ms="12941" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="bookAticket(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateBooking@223f3642]" started-at="2020-01-24T16:42:50 WAT" name="bookAticket" data-provider="Booker" finished-at="2020-01-24T16:43:19 WAT" duration-ms="28916" status="PASS">
+        <test-method signature="bookAticket(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gigm.testcases.ValidateBooking@223f3642]" started-at="2020-01-24T17:11:37 WAT" name="bookAticket" data-provider="Booker" finished-at="2020-01-24T17:12:17 WAT" duration-ms="39814" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,7 +42,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookAticket -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateBooking@223f3642]" started-at="2020-01-24T16:43:19 WAT" name="tearDown" finished-at="2020-01-24T16:43:19 WAT" duration-ms="56" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gigm.testcases.ValidateBooking@223f3642]" started-at="2020-01-24T17:12:17 WAT" name="tearDown" finished-at="2020-01-24T17:12:17 WAT" duration-ms="91" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
