@@ -28,10 +28,6 @@
 		</classes>
 	</test>
 	
-	<test name="Booking">
-		<classes>
-			<class name="com.gigm.testcases.ValidateBooking" />
-		</classes>
-	</test>
+	
 
 </suite>
